@@ -48,5 +48,12 @@ def jacobi_relaxation(N=100, tolerance=1e-5, L=10, V1=1, V2=-1):
 jacobi_vals, iterations = jacobi_relaxation()
 print(iterations)
 
+'''
+En el jupyter:
+import matplotlib.pyplot as plt
+import matplotlib.cm as cm
 
-
+plt.imshow(jacobi_vals)
+plt.gray()
+plt.show()
+'''
