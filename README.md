@@ -3,9 +3,9 @@
 
 Este repositorio tiene como objetivo implementar métodos numéricos en la resolución de la ecuación de Laplace en dos dimensiones:
 
-\begin{equation}
-\frac{\partial^2 \phi}{\partial x^2}+ \frac{\partial^2 \phi}{\partial y^2}=0
-\end{equation}
+<div>
+<img src="Ec_Laplace.png" width="400"/>
+</div>
 
 Para el potencial electrostático $\phi=\phi(x,y)$ En una placa cuadrada de $10cm \times 10cm$. El problema modela de forma ideal el capacitor
 electronico que se presenta en la siguiente figura:
