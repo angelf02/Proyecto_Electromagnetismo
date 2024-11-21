@@ -19,7 +19,7 @@ using namespace std;
     // Ahora para resolver el sistema utilizando el método de Gauss-Seidel
     bool solve() {
         int iter = 0;
-        vector<vector<double>> phi_ant = phi; // Se guarda la malla anterior para verificar que exista convergencia
+        vector<vector<double>> phi_old = phi; // Se guarda la malla anterior para verificar que exista convergencia
 
         while (iter < maxIter) {
             bool converged = true;
@@ -29,8 +29,8 @@ using namespace std;
                 for (int j = 1; j < n - 1; ++j) {
                     if (phi[i][j] == 0) continue; 
 
-                    double phi_nuev = 0.25 * (phi[i + 1][j] + phi[i - 1][j] + phi[i][j + 1] + phi[i][j - 1]);
-                    phi[i][j] = phi_nuev;
+                    double phi_new = 0.25 * (phi[i + 1][j] + phi[i - 1][j] + phi[i][j + 1] + phi[i][j - 1]);
+                    phi[i][j] = phi_new;
 
                     // Se verifica la convergencia
                     double change = fabs(phi[i][j] - phi_ant[i][j]);
@@ -47,7 +47,7 @@ using namespace std;
             }
 
             // Se copia la malla actual a la malla anterior para la siguiente iteración
-            phi_ant = phi;
+            phi_old = phi;
             iter++;
         }
 
