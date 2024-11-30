@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include <cmath> // Para std::abs
+#include <cmath>
 #include <algorithm> // Para std::max
 
 double calcular_delta(const std::vector<double> &phi, const std::vector<double> &phi_copy) {
@@ -74,5 +74,4 @@ int main(int argc, char* argv[]) {
     
     return 0;
 }
-
 
