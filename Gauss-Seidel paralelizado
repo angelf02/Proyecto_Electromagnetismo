@@ -27,14 +27,14 @@ int main(int argc, char* argv[]) {
   int size, rank;
   MPI_Init(&argc, &argv);
  
-  MPI_Comm_size(MPI_COMM_WORLD, &size); // con esto se obtiene el número de procesos 
-  MPI_Comm_rank(MPI_COMM_WORLD, &rank); // aquí se obtiene el rank de cada proceso
+  MPI_Comm_size(MPI_COMM_WORLD, &size); // Con esto se obtiene el número de procesos 
+  MPI_Comm_rank(MPI_COMM_WORLD, &rank); // Aquí se obtiene el rank de cada proceso
 
  vector<vector<double>> A(N, vector<double>(N, 0.0));  // Esto es para la matriz A de coeficientes
  vector<double> b(N, 1.0);  // Vector del lado derecho
- vector<double> x(N, 0.0);  // Para la solución inicial en cero
+ vector<double> x(N, 0.0);  // Esto es la solución inicial en cero
 
- if (rank == 0) {    // Inicializando la matriz 
+ if (rank == 0) {    // Inicializando la matriz A  
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < N; j++) {
                 A[i][j] = (i == j) ? 4.0 : -1.0;  
@@ -42,7 +42,7 @@ int main(int argc, char* argv[]) {
         }
     }
 
-// Ahora se distribuye la matriz A entre los procesos
+// Ahora se distribuye la matriz A entre los procesos, es deicr, envía un mensaje desde el proceso root a los proc del grupo 
 
 MPI_Bcast(A.data(), N * N, MPI_DOUBLE, 0, MPI_COMM_WORLD);
 MPI_Bcast(b.data(), N, MPI_DOUBLE, 0, MPI_COMM_WORLD);
