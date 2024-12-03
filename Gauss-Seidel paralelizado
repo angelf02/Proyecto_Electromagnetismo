@@ -4,6 +4,7 @@
 #include <algorithm> // Para std::max
 #include <mpi.h>
 
+
 double calcular_delta(const std::vector<double> &phi, const std::vector<double> &phi_copy) {
 	double delta = 0.0;
 	for (size_t i = 0; i < phi.size(); ++i) {
@@ -25,18 +26,22 @@ int main(int argc, char* argv[]) {
   int size, rank;
   MPI_Init(&argc, &argv);
  
-  MPI_Comm_size(MPI_COMM_WORLD, &size);
-  MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+  MPI_Comm_size(MPI_COMM_WORLD, &size); // con esto se obtiene el número de procesos 
+  MPI_Comm_rank(MPI_COMM_WORLD, &rank); // el rank de cada proceso
 
-  int data = 0;
-if (rank == 0) {
-data = 100;
-}
+ vector<vector<double>> A(N, vector<double>(N, 0.0));  // Esto es para la matriz A de coeficientes
+ vector<double> b(N, 1.0);  // Vector del lado derecho
+ vector<double> x(N, 0.0);  // Para la solución inicial en cero
 
-  MPI_Init(NULL, NULL);  // Sincroniza los resultados entre los procesos utilizando MPI 
+ if (rank == 0) {    // Inicializando la matriz 
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < N; j++) {
+                A[i][j] = (i == j) ? 4.0 : -1.0;  
+            }
+        }
+    }
 
-  sendbuff = rank;
-  MPI_Status stat;
+  
 
 	int N = atoi(argv[2]);  // Tamaño de la grilla (NxN)
 	double tolerance = atof(argv[4]);  // Tolerancia
