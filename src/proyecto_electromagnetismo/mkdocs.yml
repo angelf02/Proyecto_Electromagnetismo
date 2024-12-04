@@ -1,0 +1,16 @@
+site_name: Proyecto Electromagnetismo
+theme:
+  name: material
+  palette:
+    primary: deep-purple
+    accent: light-blue
+nav:
+  - Home: index.md
+  - Scripts Python:
+      - Relajación Jacobi: scripts/Relajacion_Jacobi.md
+      - Gauss-Seidel: scripts/Gauss_Seidel.md
+      - Jacobi Modificado: notebooks/jacobi_modificado.md
+  - Código en C++:
+      - Laplace Solver: codigo_cpp/laplace_solver.md
+      - Laplace Solver Paralelo: codigo_cpp/laplace_parallel.md
+
