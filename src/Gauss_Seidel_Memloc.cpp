@@ -68,6 +68,7 @@ int main(int argc, char* argv[]) {
 #pragma omp for
         for (int i = 1; i < N; ++i) {
             for (int j = 1; j < N; ++j) {
+		    //Se mantienen los valores de las placas
 		    if((i>=start_y && i<=end_y)&&(j==plate_x1||j==plate_x2)){
             }
 		    else{
@@ -81,11 +82,6 @@ int main(int argc, char* argv[]) {
 	    }
         }
 
-        // Restauro el potencial en las placas ya que este sí fue modificado
-        /*for (int i = start_y; i < end_y; ++i) {
-            phi[i * grilla_size + plate_x1] = 1.0;
-            phi[i * grilla_size + plate_x2] = -1.0;
-        }*/
 	}
 
         delta = calcular_delta(phi, phi_copy);
