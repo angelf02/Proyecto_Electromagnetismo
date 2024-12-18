@@ -1,0 +1,27 @@
+site_name: Proyecto Electromagnetismo
+nav:
+  - Inicio: index.md
+  - Métodos en Python:
+      - Relajación Jacobi: scripts/Relajacion_Jacobi.md
+      - Jacobi Modificado: notebooks/jacobi_modificado.md
+      - Gauss Seidel: scripts/Gauss_Seidel.md
+  - Código en C++:
+      - Gauss Seidel: codigo_cpp/Gauss_Seidel.md
+      - Gauss Seidel en memoria compartida: codigo_cpp/Gauss_Seidel_Memloc.md
+      - Gauss Seidel en memoria distribuida: codigo_cpp/Gauss_Seidel_Dist.md
+theme:
+  name: material
+  palette:
+    primary: deep-purple
+    accent: light-blue
+  features:
+    - content.code.copy
+markdown_extensions:
+  - pymdownx.highlight:
+      linenums: true
+extra_javascript:
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+
+
+
