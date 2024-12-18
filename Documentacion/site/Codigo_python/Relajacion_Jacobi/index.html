@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../Gauss_Seidel/">
+        <link rel="prev" href="../..">
       
       
-        <link rel="next" href="../Gauss_Seidel_Dist/">
+        <link rel="next" href="../jacobi_modificado/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Gauss Seidel en memoria compartida - Proyecto Electromagnetismo</title>
+        <title>Relajación Jacobi - Proyecto Electromagnetismo</title>
       
     
     
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#solucion-paralela-de-la-ecuacion-de-laplace-con-openmp" class="md-skip">
+        <a href="#relajacion-jacobi" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Gauss Seidel en memoria compartida
+              Relajación Jacobi
             
           </span>
         </div>
@@ -216,17 +216,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -240,7 +242,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Métodos en Python
@@ -251,10 +253,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../scripts/Relajacion_Jacobi/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Relajación Jacobi
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -263,6 +285,35 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#codigo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Código
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -275,7 +326,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notebooks/jacobi_modificado/" class="md-nav__link">
+      <a href="../jacobi_modificado/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -296,7 +347,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../scripts/Gauss_Seidel/" class="md-nav__link">
+      <a href="../Gauss_Seidel/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -321,19 +372,17 @@
       
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -347,7 +396,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Código en C++
@@ -361,7 +410,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Gauss_Seidel/" class="md-nav__link">
+      <a href="../../Codigo_cpp/Gauss_Seidel/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -379,30 +428,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Gauss Seidel en memoria compartida
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Codigo_cpp/Gauss_Seidel_Memloc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -411,35 +440,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#codigo-fuente" class="md-nav__link">
-    <span class="md-ellipsis">
-      Código Fuente
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -452,7 +452,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Gauss_Seidel_Dist/" class="md-nav__link">
+      <a href="../../Codigo_cpp/Gauss_Seidel_Dist/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -500,9 +500,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#codigo-fuente" class="md-nav__link">
+  <a href="#codigo" class="md-nav__link">
     <span class="md-ellipsis">
-      Código Fuente
+      Código
     </span>
   </a>
   
@@ -523,103 +523,52 @@
                   
 
 
-<h1 id="solucion-paralela-de-la-ecuacion-de-laplace-con-openmp">Solución Paralela de la Ecuación de Laplace con OpenMP</h1>
-<p>Aca se busca paralelizar con el uso de OpenMP, de manera que se trabaja en memoria compartida.</p>
-<h2 id="codigo-fuente">Código Fuente</h2>
-<pre><code class="language-cpp">#include &lt;iostream&gt;
-#include &lt;vector&gt;
-#include &lt;cmath&gt; // Para std::abs
-#include &lt;algorithm&gt; // Para std::max
-#include &lt;omp.h&gt; // OpenMP
-#include &lt;sys/time.h&gt; // Para medir tiempo
+<h1 id="relajacion-jacobi">Relajación Jacobi</h1>
+<p>Este script pretende implementar el método de relajación de Jacobi para resolver la ecuación de Laplace. Es útil en aplicaciones como simulaciones de potencial eléctrico, y facilita la representación grafica de la solución.</p>
+<h2 id="codigo">Código</h2>
+<pre><code class="language-python">import numpy as np
+def jacobi_relaxation(N=100, tolerance=1e-5, L=10, V1=1, V2=-1):
+    # Iniciación de phi
+    phi = np.zeros((N + 1, N + 1), dtype=float)
+    # Condiciones iniciales (placas)
+    phi[int((N/L)*2):int((N/L)*8), int((N/L)*2)] = V1
+    phi[int((N/L)*2):int((N/L)*8), int((N/L)*8)] = V2
 
-double seconds()
-{
-  struct timeval tmp;
-  double sec;
-  gettimeofday(&amp;tmp, (struct timezone *)0);
-  sec = tmp.tv_sec + ((double)tmp.tv_usec) / 1000000.0;
+    delta = 1.0
+    its = 0
 
-  return sec;
-}
+    while delta &gt; tolerance:
+        its += 1
+        phi_new = phi.copy()
+        phi_new[1:N, 1:N] = (1.0/4.0) * (
+            phi[2:N + 1, 1:N] +
+            phi[0:N - 1, 1:N] +
+            phi[1:N, 2:N + 1] +
+            phi[1:N, 0:N - 1]
+        )
+        # Restauro el potencial en las placas
+        phi_new[int((N / L) * 2):int((N / L) * 8), int((N / L) * 2)] = V1
+        phi_new[int((N / L) * 2):int((N / L) * 8), int((N / L) * 8)] = V2
 
-double calcular_delta(const std::vector&lt;double&gt; &amp;phi, const std::vector&lt;double&gt; &amp;phi_copy) {
-    double delta = 0.0;
-    for (size_t i = 0; i &lt; phi.size(); ++i) {
-        delta = std::max(delta, std::abs(phi[i] - phi_copy[i]));
-    }
-    return delta;
-}
+        delta = np.max(np.abs(phi - phi_new))
+        phi = phi_new
 
-int main(int argc, char* argv[]) {
-    if (argc != 7) {
-        std::cerr &lt;&lt; &quot;Usage: &quot; &lt;&lt; argv[0] &lt;&lt; &quot; --N [Tamaño lineal de la grilla cuadrada (NxN)] --t [Tolerancia] --L [Tamaño lineal del capacitor cuadrado (LxL)]&quot; &lt;&lt; std::endl;
-        return 1;
-    }
+    return phi, its
 
-    std::cout &lt;&lt; &quot;Bienvenido.&quot; &lt;&lt; std::endl;
-    std::cout &lt;&lt; &quot;Se está calculando la solución de la ecuación de Laplace bajo los parámetros definidos...&quot; &lt;&lt; std::endl;
+jacobi_vals, iterations = jacobi_relaxation()
+print(iterations)
 
-    int N = atoi(argv[2]);
-    double tolerance = atof(argv[4]);
-    int L = atoi(argv[6]);
-    int grilla_size = N + 1;
+En el jupyter:
+import matplotlib.pyplot as plt
+import matplotlib.cm as cm
 
-    std::vector&lt;double&gt; phi(grilla_size * grilla_size, 0.0);
-
-    int start_y = (N / L) * 2.0;
-    int end_y = (N / L) * 8.0;
-    int plate_x1 = (N / L) * 2.0;
-    int plate_x2 = (N / L) * 8.0;
-
-    for (int i = start_y; i &lt; end_y; ++i) {
-        phi[i * grilla_size + plate_x1] = 1.0;
-        phi[i * grilla_size + plate_x2] = -1.0;
-    }
-
-    std::vector&lt;double&gt; phi_copy = phi;
-
-    double delta = 1.0;
-    int its = 0;
-    int num_procs;
-    double time_1 = seconds();
-
-    while (delta &gt; tolerance) {
-        its++;
-#pragma omp parallel
-        {
-            num_procs = omp_get_num_threads();
-#pragma omp for
-            for (int i = 1; i &lt; N; ++i) {
-                for (int j = 1; j &lt; N; ++j) {
-                    if ((i &gt;= start_y &amp;&amp; i &lt;= end_y) &amp;&amp; (j == plate_x1 || j == plate_x2)) {
-                        // No se modifica la placa
-                    } else {
-                        phi[i * grilla_size + j] = (1.0 / 4.0) *
-                            (phi[(i + 1) * grilla_size + j] +
-                             phi[(i - 1) * grilla_size + j] +
-                             phi[i * grilla_size + (j + 1)] +
-                             phi[i * grilla_size + (j - 1)]);
-                    }
-                }
-            }
-        }
-
-        delta = calcular_delta(phi, phi_copy);
-        phi_copy = phi;
-    }
-
-    double time_2 = seconds();
-    std::cout &lt;&lt; &quot;Se llegó a la tolerancia tras &quot; &lt;&lt; its &lt;&lt; &quot; iteraciones.&quot; &lt;&lt; std::endl;
-    std::cout &lt;&lt; &quot;Número de hilos: &quot; &lt;&lt; num_procs &lt;&lt; std::endl;
-    std::cout &lt;&lt; &quot;Tiempo total: &quot; &lt;&lt; time_2 - time_1 &lt;&lt; &quot; segundos&quot; &lt;&lt; std::endl;
-
-    return 0;
-}
+plt.imshow(jacobi_vals)
+plt.gray()
+plt.show()
 </code></pre>
-<p>Converge tras 1143 iteraciones.</p>
-<p>Escalabilidad:</p>
-<p><img alt="Descripción de la imagen" src="../escala.jpeg" /></p>
+<p>Converge tras 1803 iteraciones.</p>
+<p>Gráfico
+<img alt="Descripción de la imagen" src="../Jacobi.jpeg" /></p>
 
 
 

@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../../notebooks/jacobi_modificado/">
+        <link rel="prev" href="../Gauss_Seidel/">
       
       
-        <link rel="next" href="../../codigo_cpp/Gauss_Seidel/">
+        <link rel="next" href="../Gauss_Seidel_Dist/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Gauss Seidel - Proyecto Electromagnetismo</title>
+        <title>Gauss Seidel en memoria compartida - Proyecto Electromagnetismo</title>
       
     
     
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#metodo-de-gauss-seidel" class="md-skip">
+        <a href="#solucion-paralela-de-la-ecuacion-de-laplace-con-openmp" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Gauss Seidel
+              Gauss Seidel en memoria compartida
             
           </span>
         </div>
@@ -216,19 +216,17 @@
       
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -242,7 +240,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Métodos en Python
@@ -256,7 +254,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Relajacion_Jacobi/" class="md-nav__link">
+      <a href="../../Codigo_python/Relajacion_Jacobi/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -277,11 +275,97 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notebooks/jacobi_modificado/" class="md-nav__link">
+      <a href="../../Codigo_python/jacobi_modificado/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Jacobi Modificado
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Codigo_python/Gauss_Seidel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gauss Seidel
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Código en C++
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Código en C++
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Gauss_Seidel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gauss Seidel
   </span>
   
 
@@ -311,7 +395,7 @@
           
   
   <span class="md-ellipsis">
-    Gauss Seidel
+    Gauss Seidel en memoria compartida
   </span>
   
 
@@ -322,7 +406,7 @@
         
   
   <span class="md-ellipsis">
-    Gauss Seidel
+    Gauss Seidel en memoria compartida
   </span>
   
 
@@ -344,9 +428,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#codigo-en-python" class="md-nav__link">
+  <a href="#codigo-fuente" class="md-nav__link">
     <span class="md-ellipsis">
-      Código en Python
+      Código Fuente
     </span>
   </a>
   
@@ -361,48 +445,6 @@
 
               
             
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Código en C++
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            Código en C++
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
               
                 
   
@@ -410,49 +452,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../codigo_cpp/Gauss_Seidel/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Gauss Seidel
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../codigo_cpp/Gauss_Seidel_Memloc/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Gauss Seidel en memoria compartida
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../codigo_cpp/Gauss_Seidel_Dist/" class="md-nav__link">
+      <a href="../Gauss_Seidel_Dist/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -500,9 +500,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#codigo-en-python" class="md-nav__link">
+  <a href="#codigo-fuente" class="md-nav__link">
     <span class="md-ellipsis">
-      Código en Python
+      Código Fuente
     </span>
   </a>
   
@@ -523,52 +523,103 @@
                   
 
 
-<h1 id="metodo-de-gauss-seidel">Método de Gauss-Seidel</h1>
-<p>En este script se implementa el método de Gauss-Seidel, en el que se busca iterar sobre el mismo campo en memoria, lo que permite una convergencia mas rapida. De todas maneras, por la naturaleza del método, es necesario usar <code>for</code> loops, lo que afecta la velocidad.</p>
-<hr />
-<h2 id="codigo-en-python">Código en Python</h2>
-<pre><code class="language-python">#!/usr/bin/env python
+<h1 id="solucion-paralela-de-la-ecuacion-de-laplace-con-openmp">Solución Paralela de la Ecuación de Laplace con OpenMP</h1>
+<p>Aca se busca paralelizar con el uso de OpenMP, de manera que se trabaja en memoria compartida.</p>
+<h2 id="codigo-fuente">Código Fuente</h2>
+<pre><code class="language-cpp">#include &lt;iostream&gt;
+#include &lt;vector&gt;
+#include &lt;cmath&gt; // Para std::abs
+#include &lt;algorithm&gt; // Para std::max
+#include &lt;omp.h&gt; // OpenMP
+#include &lt;sys/time.h&gt; // Para medir tiempo
 
-import numpy as np
+double seconds()
+{
+  struct timeval tmp;
+  double sec;
+  gettimeofday(&amp;tmp, (struct timezone *)0);
+  sec = tmp.tv_sec + ((double)tmp.tv_usec) / 1000000.0;
 
-def gauss_seidel(N=100, tolerance=1e-5, L=10, V1=1, V2=-1):
-    # Iniciación de phi
-    phi = np.zeros((N + 1, N + 1), dtype=float)
+  return sec;
+}
 
-    # Condiciones iniciales (placas)
-    phi[int((N/L)*2):int((N/L)*8), int((N/L)*2)] = V1
-    phi[int((N/L)*2):int((N/L)*8), int((N/L)*8)] = V2
+double calcular_delta(const std::vector&lt;double&gt; &amp;phi, const std::vector&lt;double&gt; &amp;phi_copy) {
+    double delta = 0.0;
+    for (size_t i = 0; i &lt; phi.size(); ++i) {
+        delta = std::max(delta, std::abs(phi[i] - phi_copy[i]));
+    }
+    return delta;
+}
 
-    # Copia para evaluar el error
-    phi_copy = phi.copy()
+int main(int argc, char* argv[]) {
+    if (argc != 7) {
+        std::cerr &lt;&lt; &quot;Usage: &quot; &lt;&lt; argv[0] &lt;&lt; &quot; --N [Tamaño lineal de la grilla cuadrada (NxN)] --t [Tolerancia] --L [Tamaño lineal del capacitor cuadrado (LxL)]&quot; &lt;&lt; std::endl;
+        return 1;
+    }
 
-    delta = 1.0
-    its = 0
+    std::cout &lt;&lt; &quot;Bienvenido.&quot; &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;Se está calculando la solución de la ecuación de Laplace bajo los parámetros definidos...&quot; &lt;&lt; std::endl;
 
-    while delta &gt; tolerance:
-        its += 1
+    int N = atoi(argv[2]);
+    double tolerance = atof(argv[4]);
+    int L = atoi(argv[6]);
+    int grilla_size = N + 1;
 
-        # Iteración de Gauss-Seidel
-        for i in range(1, N):
-            for j in range(1, N):
-                phi[i, j] = (phi[i+1, j] + phi[i-1, j] + phi[i, j+1] + phi[i, j-1]) / 4.0
+    std::vector&lt;double&gt; phi(grilla_size * grilla_size, 0.0);
 
-        # Restauro el potencial en las placas
-        phi[int((N / L) * 2):int((N / L) * 8), int((N / L) * 2)] = V1
-        phi[int((N / L) * 2):int((N / L) * 8), int((N / L) * 8)] = V2
+    int start_y = (N / L) * 2.0;
+    int end_y = (N / L) * 8.0;
+    int plate_x1 = (N / L) * 2.0;
+    int plate_x2 = (N / L) * 8.0;
 
-        # Evaluar la convergencia
-        delta = np.max(np.abs(phi - phi_copy))
-        phi_copy = phi.copy()
+    for (int i = start_y; i &lt; end_y; ++i) {
+        phi[i * grilla_size + plate_x1] = 1.0;
+        phi[i * grilla_size + plate_x2] = -1.0;
+    }
 
-    return phi, its
+    std::vector&lt;double&gt; phi_copy = phi;
 
-gauss_vals, iterations = gauss_seidel()
-print(iterations)
+    double delta = 1.0;
+    int its = 0;
+    int num_procs;
+    double time_1 = seconds();
+
+    while (delta &gt; tolerance) {
+        its++;
+#pragma omp parallel
+        {
+            num_procs = omp_get_num_threads();
+#pragma omp for
+            for (int i = 1; i &lt; N; ++i) {
+                for (int j = 1; j &lt; N; ++j) {
+                    if ((i &gt;= start_y &amp;&amp; i &lt;= end_y) &amp;&amp; (j == plate_x1 || j == plate_x2)) {
+                        // No se modifica la placa
+                    } else {
+                        phi[i * grilla_size + j] = (1.0 / 4.0) *
+                            (phi[(i + 1) * grilla_size + j] +
+                             phi[(i - 1) * grilla_size + j] +
+                             phi[i * grilla_size + (j + 1)] +
+                             phi[i * grilla_size + (j - 1)]);
+                    }
+                }
+            }
+        }
+
+        delta = calcular_delta(phi, phi_copy);
+        phi_copy = phi;
+    }
+
+    double time_2 = seconds();
+    std::cout &lt;&lt; &quot;Se llegó a la tolerancia tras &quot; &lt;&lt; its &lt;&lt; &quot; iteraciones.&quot; &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;Número de hilos: &quot; &lt;&lt; num_procs &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;Tiempo total: &quot; &lt;&lt; time_2 - time_1 &lt;&lt; &quot; segundos&quot; &lt;&lt; std::endl;
+
+    return 0;
+}
 </code></pre>
-<p>Este método converge en 1196 iteraciones, una gran mejora respecto a Jacobi (1803 iteraciones).</p>
-<p>Gráfico
-<img alt="Descripción de la imagen" src="../Gauss.jpeg" /></p>
+<p>Converge tras 1143 iteraciones.</p>
+<p>Escalabilidad:</p>
+<p><img alt="Descripción de la imagen" src="../escala.jpeg" /></p>
 
 
 
